@@ -13,7 +13,7 @@
         <arg name="yaw" default="0"/>
     </include>-->
 
-<!--    <include file="$(find uuv_descriptions)/launch/upload_multi_rexrov_default.launch"> </include>-->
+    <include file="$(find uuv_descriptions)/launch/upload_multi_rexrov_default.launch"> </include>
 
     <!-- Start the rexrov controller -->
     <include file="$(find uuv_tutorial_dp_controller)/launch/start_tutorial_dp_controller.launch">
