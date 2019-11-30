@@ -10,7 +10,7 @@
     <arg name="headless" value="false"/>
     <arg name="debug" value="false"/>
     <arg name="verbose" value="true" />
-  </include>
+  </include>u
 
   <include file="$(find uuv_assistants)/launch/publish_world_ned_frame.launch"/>
   

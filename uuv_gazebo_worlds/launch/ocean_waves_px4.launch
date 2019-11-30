@@ -6,7 +6,6 @@
 
     <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
-<!--        <arg name="world_name" value="worlds/ocean_waves.world"/>-->
         <arg name="world_name" value="worlds/ocean_waves_px4.world"/>
         <arg name="paused" value="$(arg paused)"/>
         <arg name="use_sim_time" value="true"/>
@@ -17,6 +16,8 @@
     </include>
 
     <include file="$(find uuv_assistants)/launch/publish_world_ned_frame.launch"/>
+
+<!--    <include file="$(find uuv_descriptions)/launch/upload_multi_rexrov_default.launch"> </include>-->
     
     <node name="publish_world_models"
         pkg="uuv_assistants"

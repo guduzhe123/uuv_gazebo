@@ -6,17 +6,25 @@
     <include file="$(find uuv_gazebo_worlds)/launch/ocean_waves.launch"/>
 
     <!-- Add the RexROV vehicle to the simulation (namespace: rexrov) -->
-    <include file="$(find uuv_descriptions)/launch/upload_rexrov.launch">
+<!--    <include file="$(find uuv_descriptions)/launch/upload_rexrov.launch">
         <arg name="x" default="20"/>
         <arg name="y" default="0"/>
         <arg name="z" default="-20"/>
         <arg name="yaw" default="0"/>
-    </include>
+    </include>-->
 
-    <!-- Start the controller -->
+<!--    <include file="$(find uuv_descriptions)/launch/upload_multi_rexrov_default.launch"> </include>-->
+
+    <!-- Start the rexrov controller -->
     <include file="$(find uuv_tutorial_dp_controller)/launch/start_tutorial_dp_controller.launch">
         <arg name="uuv_name" value="rexrov"/>
         <arg name="model_name" value="rexrov"/>
+    </include>
+
+    <!-- Start the rexrov2 controller -->
+    <include file="$(find uuv_tutorial_dp_controller)/launch/start_tutorial_dp_controller.launch">
+        <arg name="uuv_name" value="rexrov2"/>
+        <arg name="model_name" value="rexrov2"/>
     </include>
 
     <!-- Start the recording node  -->

@@ -17,8 +17,22 @@
 <sdf version="1.4">
   <world name="oceans_waves">
     <physics name="default_physics" default="true" type="ode">
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>10</iters>
+          <sor>1.3</sor>
+          <use_dynamic_moi_rescaling>0</use_dynamic_moi_rescaling>
+        </solver>
+        <constraints>
+          <cfm>0</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>100</contact_max_correcting_vel>
+          <contact_surface_layer>0.001</contact_surface_layer>
+        </constraints>
+      </ode>
       <max_step_size>0.002</max_step_size>
-      <real_time_factor>0</real_time_factor>
+      <real_time_factor>1</real_time_factor>
       <real_time_update_rate>500</real_time_update_rate>
     </physics>
     <scene>
