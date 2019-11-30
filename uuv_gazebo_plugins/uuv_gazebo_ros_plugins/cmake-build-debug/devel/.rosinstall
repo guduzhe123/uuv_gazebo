@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/zhouhua/ros_uuv/src/uuv_simulator/uuv_gazebo_plugins/uuv_gazebo_ros_plugins/cmake-build-debug/devel/setup.sh
