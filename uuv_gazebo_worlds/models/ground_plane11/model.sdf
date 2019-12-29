@@ -6,8 +6,8 @@
       <collision name="collision">
         <geometry>
           <plane>
-            <normal>0 0 -1</normal>
-            <size>500 500</size>
+            <normal>0 0 1</normal>
+            <size>100 100</size>
           </plane>
         </geometry>
         <surface>
@@ -26,8 +26,8 @@
         <cast_shadows>false</cast_shadows>
         <geometry>
           <plane>
-            <normal>0 0 -1</normal>
-            <size>500 500</size>
+            <normal>0 0 1</normal>
+            <size>100 100</size>
           </plane>
         </geometry>
         <material>
